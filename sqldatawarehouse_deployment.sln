@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "sqldatawarehouse", "database.sqldatawarehouse\sqldatawarehouse.sqlproj", "{F41FFD8A-54AF-4818-B826-788CFF4E0C23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{C4B86A82-FF2B-47BA-B94E-1E3990D1D463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AZCLI-script", "AZCLI-script", "{FFB97E6C-AA28-4F50-B847-3F4E0AB6B661}"
+	ProjectSection(SolutionItems) = preProject
+		deploy\AZCLI-script\setup_demo_env.azcli = deploy\AZCLI-script\setup_demo_env.azcli
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug-VSTS|Any CPU = Debug-VSTS|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Release-DevOps|Any CPU = Release-DevOps|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Debug-VSTS|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Debug-VSTS|Any CPU.Build.0 = Debug|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Debug-VSTS|Any CPU.Deploy.0 = Debug|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Release-DevOps|Any CPU.ActiveCfg = Release|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Release-DevOps|Any CPU.Build.0 = Release|Any CPU
+		{F41FFD8A-54AF-4818-B826-788CFF4E0C23}.Release-DevOps|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFB97E6C-AA28-4F50-B847-3F4E0AB6B661} = {C4B86A82-FF2B-47BA-B94E-1E3990D1D463}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF008EA9-1E72-43ED-91EA-293FC7C4B1EC}
+	EndGlobalSection
+EndGlobal

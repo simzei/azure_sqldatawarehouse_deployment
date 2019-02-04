@@ -1,0 +1,1 @@
+﻿CREATE VIEW [stg].[DemoView] AS SELECT * FROM [stg].[DemoTable];

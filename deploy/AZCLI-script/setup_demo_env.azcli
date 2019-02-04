@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# set the variables for this deployment script
+export rgName=dwplayground
+export location=westeurope
+export sqlServerName=dwplaysql
+export sqlDWdatabasename=dwplaydb
+export sqlServerAdmin=dwplayadmin
+export sqlServerAdminPw=Y0urPwH3r3!!
+
+# set your subscription ID or comment for default
+#e2c2feb1-3248-4add-95e5-e54bea5f0f96
+#d403eab1-3897-4971-aea6-91cbe38ac3c3
+az account set --subscription d403eab1-3897-4971-aea6-91cbe38ac3c3
+
+# Create the resource group
+az group create --name $rgName --location $location
+
+# Create a logical server in the resource group
+az sql server create \
+	--name $sqlServerName \
+	--resource-group $rgName \
+	--location $location  \
+	--admin-user $sqlServerAdmin \
+	--admin-password $sqlServerAdminPw
+
+
+# Create sql dw database
+az sql db create \
+	--resource-group $rgName \
+	--server $sqlServerName \
+	--name $sqlDWdatabasename \
+	--edition DataWarehouse \
+    --service-objective DW500c
